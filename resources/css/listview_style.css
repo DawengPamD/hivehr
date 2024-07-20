@@ -1,0 +1,190 @@
+@import url('https://rsms.me/inter/inter.css');
+
+
+body {
+       font-family: 'Outfit', Arial, sans-serif;
+       font-size: 16px;
+       font-weight: 350;
+       line-height: 18px;
+       margin: 0;
+       padding: 20px;
+   }
+
+   .container {
+       max-width: 1200px;
+       margin: 0 auto;
+   }
+
+   .filter-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
+    .filter-bar .left,
+    .filter-bar .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .filter-bar input[type="text"],
+    .filter-bar select,
+    .filter-bar button {
+        height: auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-right: 10px;
+        font-family: 'Outfit', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 350;
+        line-height: 18px;
+    }
+
+    .filter-bar input[type="text"] {
+        width: 377px;
+        flex: 1;
+        padding-left: 35px;
+        background: url('https://img.icons8.com/ios-filled/50/000000/search--v1.png') no-repeat 10px center;
+        background-size: 20px;
+    }
+
+    .filter-bar select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url('https://img.icons8.com/material-outlined/24/000000/sort-down.png') no-repeat right 10px center;
+        background-size: 20px;
+        padding-right: 30px;
+    }
+
+    .filter-bar button {
+        background-color: transparent;
+        color: #000000;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .filter-bar button svg {
+        margin-right: 5px;
+    }
+
+    .filter-bar button:hover {
+        background-color: #007bff;
+    }
+
+   table {
+       width: 100%;
+       border-collapse: collapse;
+       background-color: #fff;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+
+   thead {
+       background-color: #f1f1f1;
+   }
+
+   th, td {
+       padding: 15px;
+       text-align: left;
+   }
+
+   th {
+       font-weight: 450;
+       position: sticky;
+       top: 0;
+       background-color: #f8f9fa;
+       border-bottom: 2px solid #dee2e6;
+   }
+
+   tbody tr:nth-child(even) {
+       background-color: #f9f9f9;
+   }
+
+   .status {
+       display: inline-block;
+       padding: 5px 10px;
+       border-radius: 12px;
+       color: #fff;
+       font-size: 0.9em;
+   }
+
+   .status.completed {
+       border: 0.5px solid #069855;
+       background-color: #E6F5EE;
+       color: #069855;
+   }
+
+   .status.ongoing {
+       background-color: #FDF4F4;
+       border: 0.5px solid #D62525;
+       color: #D62525;
+   }
+
+   progress {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-sizing: border-box;
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    border: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #5297FF;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #534FEB;
+    border-radius: 10px 10px 10px 10px;
+    transition: width 0.4s ease;
+}
+
+progress::-moz-progress-bar {
+    background-color: #007bff;
+    border-radius: 10px 0 0 10px;
+    transition: width 0.4s ease;
+}
+
+
+   .pagination {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 0 30px;
+       margin-top: 20px;
+   }
+
+   .buttons button {
+       padding: 8px 12px;
+       border: none;
+       background-color: #F5F5F5;
+       color: #000000;
+       cursor: pointer;
+       margin: 0 5px;
+       border: 0.5px solid #0000000D;
+       border-radius: 5px;
+   }
+
+   .buttons button:disabled {
+       background-color: #6c757d;
+       cursor: not-allowed;
+   }
+
+   .buttons button:hover:not(:disabled) {
+       background-color: #0056b3;
+   }
+
+   .page-label p b {
+    font-weight: 500;
+    margin: 0 10px;
+  }
